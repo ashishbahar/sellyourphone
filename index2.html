@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/png/favicon.png"
-      type="image/x-icon"
-    />
-    <title>Sell Your App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          container: {
-            center: true,
-            padding: {
-              DEFAULT: "1rem",
-              lg: "4.375rem",
-              "2xl": "12.375rem",
-            },
-          },
-          extend: {
-            fontSize: {
-              xs: "16px",
-              sm: "20px",
-              md: "24px",
-              lg: "34px",
-              xl: "60px",
-            },
-            colors: {
-              dark: "#1c1c1c",
-              gray: "#969696",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/png/favicon.png" type="image/x-icon" />
+  <title>Sell Your App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: "1rem",
+            lg: "4.375rem",
+            "2xl": "12.375rem",
           },
         },
-      };
-    </script>
-  </head>
-  <body>
-    <div>
-      <div>
-        <h2 class="text-center">Why Us?</h2>
-        <p class="text-center">Selling your App business is a big step. You’ve spent a lot of time and effort building your app. You deserve to get the best price offer and a smooth selling process.</p>
-      </div>
-      <!-- <div class=" flex flex-wrap">
-        <div class="flex flex-col flex-wrap sm:flex-row justify-center pb-[80px] md:pb-[120px]">
-           <div class="w-full sm:w-3/6 lg:w-2/6 flex items-center justify-center mt-5 aos-init aos-animate">
-            <div class="w-full transition-all ease-linear duration-300  group hover:bg-[#FDDA60] cursor-pointer  rounded-[16px] p-[25px] border-[1px] border-[#656060] relative overflow-hidden mx-[10px] bg-[#211e1e] flex flex-col items-center justify-center"></div>
-           </div>
-        </div>
-      </div> -->
-      <div class="flex flex-wrap flex-col justify-center">
-        <div class="">
-            <img src="" alt="">
-        </div>
+        extend: {
+          fontSize: {
+            xs: "16px",
+            sm: "20px",
+            md: "24px",
+            lg: "34px",
+            xl: "60px",
+          },
+          colors: {
+            dark: "#1c1c1c",
+            gray: "#969696",
+            primary_black: "#0F021D",
+            btncolor: "linear-gradient(102 deg, #FF3939 - 4.42 % , #4844F2 103.64%)",
 
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <section class="bg-primary_black">
+    <div class="container">
+      <h2 class="text-center text-white text-lg font-medium ">Why Us?</h2>
+      <p class="text-center text-white text-sm text-opacity-70 font-normal ">Selling your App business is a big step. You’ve spent
+        a lot of time and effort building
+        your app. You<span class="block"> deserve to get the best price offer and a smooth selling process.</span>
+      </p>
+
+      <div>
+        <div class="flex flex-col md:flex-row justify-center md:justify-between md:py-20 py-10">
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_one.webp" alt="Group_one">
+            <p class="text-center text-white md:max-w-[200px] lg:max-w-[220px] text-sm text-opacity-70 pt-5">We
+              guarantee 14
+              days from contact to exit
+            </p>
+          </div>
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_Two.webp" alt="Group_one">
+            <p class="text-center text-white md:max-w-[200px] lg:max-w-[220px] text-whit text-sm text-opacity-70 pt-5">
+              Full
+              cash offer, get paid
+              immediately</p>
+          </div>
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_Three.webp" alt="Group_one">
+            <p class="text-center text-white md:max-w-[200px] lg:max-w-[220px] text-sm text-opacity-70 pt-5">Best
+              price/valuation guarantee</p>
+          </div>
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_four.webp" alt="Group_one">
+            <p class="text-center text-white md:max-w-[200px] lg:max-w-[220px] text-sm text-opacity-70 pt-5">Good vibes
+              only.
+              We value human
+              connections.</p>
+          </div>
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_five.webp" alt="Group_one">
+            <p class="text-center text-white md:max-w-[200px] lg:max-w-[220px] text-sm text-opacity-70 pt-5">Simple
+              process,
+              zero complexity</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class="text-white px-10 py-4 border-0 rounded-[38px] bg-btncolor">SellYourApp</button>
+      </div>
+      <div>
+        <h2 class="text-center text-white">Explore Our Apps</h2>
+        <p class="text-center text-white">We always encourage using creativity. Our goal is to build and acquire apps that solve people's problems.
+          <span class="block">Our apps are loved and used by millions of people in every corner of the world.</span></p>
       </div>
     </div>
-  </body>
+  </section>
+  <section>
+
+  </section>
+</body>
+
 </html>
