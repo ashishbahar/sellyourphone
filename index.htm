@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link
       rel="shortcut icon"
       href="./assets/images/png/favicon.png"
@@ -40,84 +41,139 @@
   </head>
   <body>
     <div>
-      <header class="bg-black">
-        <div
-          class="container py-[39px] mx-auto items-center flex justify-between"
-        >
-          <div class="flex justify-between items-center w-full relative z-20">
-            <img
-              class="cursor-pointer"
-              src="./assets/images/webp/logo.webp"
-              alt="logo"
-            />
-            <button
-              onclick="show()"
-              class="md:hidden absolute end-0 text-white"
+      <!-- Hero Section -->
+      <div class="bg-black xl:min-h-screen flex flex-col">
+        <!-- navbar -->
+        <header>
+          <div class="container">
+            <div
+              class="py-3 md:py-[39px] mx-auto items-center flex justify-between"
             >
-              <svg
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="flex justify-between items-center w-full relative z-20"
               >
-                <g clip-path="url(#clip0_3942_2072)">
-                  <path
-                    d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z"
-                    fill="white"
-                  />
-                </g>
-              </svg>
-            </button>
+                <img
+                  class="cursor-pointer max-w-[150px] lg:max-w-[220px]"
+                  src="./assets/images/webp/logo.webp"
+                  alt="logo"
+                />
+                <button
+                  onclick="show()"
+                  class="md:hidden absolute end-0 text-white"
+                >
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_3942_2072)">
+                      <path
+                        d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <ul
+                class="md:flex font-semibold flex gap-5 md:gap-0 md:flex-row bg-black min-h-screen md:min-h-fit justify-center items-center w-full md:relative z-20 fixed left-[-100%] md:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
+                id="navMenu"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="ff_inter opacity-[.7] hover:opacity-[1] duration-300 text-xs font-medium leading-[150%] text-white"
+                    >About</a
+                  >
+                </li>
+                <li class="md:mx-[32px]">
+                  <a
+                    href="#"
+                    class="ff_inter opacity-[.7] hover:opacity-[1] duration-300 text-xs font-medium leading-[150%] text-white"
+                    >How it Works</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="ff_inter opacity-[.7] hover:opacity-[1] duration-300 text-xs font-medium leading-[150%] text-white"
+                    >Blog</a
+                  >
+                </li>
+                <span
+                  class="ff_manrope md:hidden mb-0 pb-[12px] cursor-pointer text-white font-bold leading-[170%] border-b-[1px] border-solid border-[white]"
+                >
+                  How much is my app worth?
+                </span>
+                <button
+                  onclick="hide()"
+                  class="absolute md:hidden top-[15px] right-[20px]"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.9846 11.6665L20.0013 17.6498L14.018 11.6665L11.668 14.0165L17.6513 19.9998L11.668 25.9832L14.018 28.3332L20.0013 22.3498L25.9846 28.3332L28.3346 25.9832L22.3513 19.9998L28.3346 14.0165L25.9846 11.6665Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </ul>
+              <div class="w-full text-end hidden md:block">
+                <span
+                  class="ff_manrope mb-0 pb-[12px] px-2 cursor-pointer text-white font-bold leading-[170%] border-b-[1px] border-solid border-[white]"
+                >
+                  How much is my app worth?
+                </span>
+              </div>
+            </div>
           </div>
-          <ul
-            class="md:flex md:space-x-6 xl:space-x-12 font-semibold flex gap-5 md:gap-0 md:flex-row bg-black min-h-screen md:min-h-fit justify-center items-center w-full md:relative z-20 fixed left-[-100%] md:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
-            id="navMenu"
-          >
-            <li>
-              <a
-                href="#"
-                class="hover:text-blue-500 uppercase text-white text-opacity-80"
-                >redact</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:text-blue-500 uppercase text-white text-opacity-80"
-                >extract</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:text-blue-500 uppercase text-white text-opacity-80"
-                >detect</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:text-blue-500 uppercase text-white text-opacity-80"
-                >compare</a
-              >
-            </li>
-            <li>
-              <button
-                class="text-white bg-[#0162C8] py-3 px-8 rounded-full whitespace-nowrap hover:text-red-400"
-              >
-                try Now
-              </button>
-            </li>
-          </ul>
+        </header>
+        <div class="xl:grow flex flex-col items-center justify-center">
+          <div class="container">
+            <div class="flex items-end lg:mb-[70px]">
+              <div class="lg:w-[50%] pe-3">
+                <h1 class="text-white ff_manrope text-xl font-bold">
+                  Selling Mobile Apps Made Simple.
+                </h1>
+                <p
+                  class="text-white mt-3 opacity-[.7] ff_inter font-normal text-xs leading-[170%]"
+                >
+                  Looking to sell your mobile app? We buy iOS apps in different
+                  categories and revenue levels. We promise 14 days from contact
+                  to exit with the best valuation guarantee. Most of our
+                  partners are indie developers, studios and companies.
+                </p>
+                <button
+                  class="lg:mt-[46px] mt-[30px] ff_manrope font-bold bg-gradient-to-r from-[#FF3939] to-[#4844F2] text-xs text-white hover:from-[#4844F2] hover:to-[#FF3939] border-0 outline-0 px-[40px] py-[16px] rounded-[38px]"
+                >
+                  Sell Your App
+                </button>
+              </div>
+              <div>
+                <img src="./assets/images/png/heroimg.png" alt="heroimg" />
+              </div>
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
     </div>
 
     <script>
       // JavaScript to handle the responsive navigation menu
       function show() {
-        document.getElementById("navMenu").classList.toggle("!start-0");
+        document.getElementById("navMenu").classList.add("!start-0");
+        document.body.classList.add("overflow-hidden");
+      }
+      function hide() {
+        document.getElementById("navMenu").classList.remove("!start-0");
+        document.body.classList.remove("overflow-hidden");
       }
     </script>
   </body>
