@@ -40,7 +40,85 @@
   </head>
   <body>
     <div>
-      <div class="flex"></div>
+      <header class="bg-black">
+        <div
+          class="container py-[39px] mx-auto items-center flex justify-between"
+        >
+          <div class="flex justify-between items-center w-full relative z-20">
+            <img
+              class="cursor-pointer"
+              src="./assets/images/webp/logo.webp"
+              alt="logo"
+            />
+            <button
+              onclick="show()"
+              class="md:hidden absolute end-0 text-white"
+            >
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_3942_2072)">
+                  <path
+                    d="M3 4.5H21V6.5H3V4.5ZM3 11.5H21V13.5H3V11.5ZM3 18.5H21V20.5H3V18.5Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <ul
+            class="md:flex md:space-x-6 xl:space-x-12 font-semibold flex gap-5 md:gap-0 md:flex-row bg-black min-h-screen md:min-h-fit justify-center items-center w-full md:relative z-20 fixed left-[-100%] md:start-0 top-0 flex-col h-full ps-0 transition-all duration-300 ease-linear"
+            id="navMenu"
+          >
+            <li>
+              <a
+                href="#"
+                class="hover:text-blue-500 uppercase text-white text-opacity-80"
+                >redact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-blue-500 uppercase text-white text-opacity-80"
+                >extract</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-blue-500 uppercase text-white text-opacity-80"
+                >detect</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-blue-500 uppercase text-white text-opacity-80"
+                >compare</a
+              >
+            </li>
+            <li>
+              <button
+                class="text-white bg-[#0162C8] py-3 px-8 rounded-full whitespace-nowrap hover:text-red-400"
+              >
+                try Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </header>
     </div>
+
+    <script>
+      // JavaScript to handle the responsive navigation menu
+      function show() {
+        document.getElementById("navMenu").classList.toggle("!start-0");
+      }
+    </script>
   </body>
 </html>
