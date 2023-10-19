@@ -1,46 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/png/favicon.png"
-      type="image/x-icon"
-    />
-    <title>Sell Your App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          container: {
-            center: true,
-            padding: {
-              DEFAULT: "1rem",
-              lg: "4.375rem",
-              "2xl": "12.375rem",
-            },
-          },
-          extend: {
-            fontSize: {
-              xs: "16px",
-              sm: "20px",
-              md: "24px",
-              lg: "34px",
-              xl: "60px",
-            },
-            colors: {
-              dark: "#1c1c1c",
-              gray: "#969696",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/png/favicon.png" type="image/x-icon" />
+  <title>Sell Your App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: "1rem",
+            lg: "4.375rem",
+            "2xl": "12.375rem",
           },
         },
-      };
-    </script>
-  </head>
-  <body>
-    <div>
-      <div class="flex"></div>
+        extend: {
+          fontSize: {
+            xs: "16px",
+            sm: "20px",
+            md: "24px",
+            lg: "34px",
+            xl: "60px",
+          },
+          colors: {
+            dark: "#1c1c1c",
+            gray: "#969696",
+            primary_black: "#0F021D",
+            btncolor: "linear-gradient(102 deg, #FF3939 - 4.42 % , #4844F2 103.64%)",
+
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <section class="bg-primary_black">
+    <div class="container">
+      <h2 class="text-center text-white text-lg font-medium ff_manrope pb-4">Why Us?</h2>
+      <p class="text-center text-white text-xs text-opacity-70 font-normal leading-[170%] ff_inter">Selling your App
+        business is a big step. You’ve spent
+        a lot of time and effort building
+        your app. You<span class="block"> deserve to get the best price offer and a smooth selling process.</span>
+      </p>
+
+      <div>
+        <div class="flex flex-col md:flex-row justify-center md:justify-between md:py-20 py-10">
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_one.webp" alt="Group_one">
+            <p
+              class="text-center text-white md:max-w-[200px] lg:max-w-[220px] font-normal text-xs text-opacity-70 leading-[170%] ff_inter pt-5">
+              We
+              guarantee 14
+              days from contact to exit
+            </p>
+          </div>
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_Two.webp" alt="Group_one">
+            <p
+              class="text-center text-white md:max-w-[200px] lg:max-w-[220px] font-normal  text-xs text-opacity-70 leading-[170%] ff_inter pt-5">
+              Full
+              cash offer, get paid
+              immediately</p>
+          </div>
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_Three.webp" alt="Group_one">
+            <p
+              class="text-center text-white md:max-w-[200px] lg:max-w-[220px] font-normal text-xs text-opacity-70 leading-[170%] ff_inter pt-5">
+              Best
+              price/valuation guarantee</p>
+          </div>
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_four.webp" alt="Group_one">
+            <p
+              class="text-center text-white md:max-w-[200px] lg:max-w-[220px] font-normal text-xs text-opacity-70 leading-[170%] ff_inter pt-5">
+              Good vibes
+              only.
+              We value human
+              connections.</p>
+          </div>
+          <div class="items-center flex flex-col pt-6 pt-md-0">
+            <img class="max-w-[133px]" src="assets/images/webp/Group_five.webp" alt="Group_one">
+            <p
+              class="text-center text-white md:max-w-[200px] lg:max-w-[220px] font-normal text-xs text-opacity-70 leading-[170%] ff_inter pt-5">
+              Simple
+              process,
+              zero complexity</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div
+        class="hidden md:inline-block transform hover:scale-105 transition-transform duration-300 ease-in-out  md:mt-[100px] lg:mt-[60px] xl:mt-[115px]">
+        <a
+          class="transform cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out text-white ff_Manrope font-bold text-base py-3 px-8 lg:py-4 lg:px-10 rounded-[38px] bg-[linear-gradient(102deg,#FF3939_-4.42%,#4844F2_103.64%)]">
+          SellYourApp
+        </a>
+      </div>
+      </div>
+     
     </div>
-  </body>
+  </section>
+
+  <section class="bg-[#0F021D] py-14 md:py-[100px]">
+    <div class="container">
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div class="w-[7/12]">
+          <div class="max-w-[520px] text-center lg:text-start mx-auto lg:pr-5 xl:pr-0">
+            <h2 class="ff_manrope font-medium text-white text-lg">About Us</h2>
+            <p class="opacity-70 leading-[170%] text-xs font-normal ff_inter text-white pt-4">Appstun is a global mobile
+              app
+              company that buys, builds, and grows mobile apps. We’ve served millions of users worldwide since 2021.</p>
+            <p class="opacity-70 leading-[170%] text-xs font-normal ff_inter text-white pt-4">Founded in 2021 by a team
+              of
+              passionate and creative developers and designers. We’ve built over 50 apps across multiple platforms and
+              served millions of users flawlessly with an average rating of 4.8</p>
+            <p class="opacity-70 leading-[170%] text-xs font-normal ff_inter text-white pt-4 lg:pr-5">We buy mobile apps
+              and allow
+              developers to make cash out exits with a fair valuation. If you are looking to sell your app, we’re here
+              to
+              purchase it!</p>
+            <p class="opacity-70 leading-[170%] text-xs font-normal ff_inter text-white pt-6">If you want to know more
+              about
+              us,
+              explore Appstun.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap lg:block w-[5/12] mx-auto pt-5 lg:pt-0">
+          <div class="max-w-1/2 lg:max-w-[395px] pl-6 pr-10 py-5 bg-[url('/assets/images/svg/about-one.svg')] rounded-[12px]  bg-cover bg-no-repeat">
+            <img src="assets/images/png/right_about.png" alt="right_about">
+            <h2 class="ff_manrope font-medium text-md text-white">Transparency</h2>
+            <p class="leading-[170%] ff_inter text-xs font-normal opacity-70 text-white">We value transparency. You can
+              ask any question and have a call with us any time during the sales process.</p>
+          </div>
+          <div class="max-w-1/2 lg:max-w-[395px] pl-6 pr-10 py-5 bg-[url('/assets/images/svg/about-two.svg')] mt-5 rounded-[12px]  bg-cover bg-no-repeat">
+            <img src="assets/images/png/right_about.png" alt="right_about">
+            <h2 class="ff_manrope font-medium text-md text-white">Transparency</h2>
+            <p class="leading-[170%] ff_inter text-xs font-normal opacity-70 text-white">We value transparency. You can
+              ask any question and have a call with us any time during the sales process.</p>
+          </div>
+          <div class="max-w-1/2 lg:max-w-[395px] pl-6 pr-10 py-5 bg-[url('/assets/images/svg/about-three.svg')] mt-5 rounded-[12px]  bg-cover bg-no-repeat">
+            <img src="assets/images/png/right_about.png" alt="right_about">
+            <h2 class="ff_manrope font-medium text-md text-white">Transparency</h2>
+            <p class="leading-[170%] ff_inter text-xs font-normal opacity-70 text-white">We value transparency. You can
+              ask any question and have a call with us any time during the sales process.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center ">
+        <div
+          class="hidden md:inline-block transform hover:scale-105 transition-transform duration-300 ease-in-out  md:mt-[100px] lg:mt-[60px] xl:mt-[115px]">
+          <a
+            class="transform cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out text-white ff_Manrope font-bold text-base py-3 px-8 lg:py-4 lg:px-10 rounded-[38px] bg-[linear-gradient(102deg,#FF3939_-4.42%,#4844F2_103.64%)]">
+            SellYourApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="our-app" class="bg-[#0F021D]">
+    <div class="px-4 md:px-6 xl:px-0 xl:max-w-[1140px] mx-auto"> 
+      <div>
+        <h2 class="text-center text-white text-lg font-medium ff_manrope pb-4">Explore Our Apps</h2>
+        <p class="text-center text-white text-xs text-opacity-70 font-normal leading-[170%] ff_inter">We always
+          encourage using creativity. Our goal is to build and acquire apps that solve people's problems.
+          <span class="block">Our apps are loved and used by millions of people in every corner of the world.</span></p>
+      </div>
+      <div class="md:flex gap-[24px] lg:gap-[40px] xl:gap-[52px] my-10">
+        
+        <div class="md:w-1/2">
+          <!-- Card One  -->
+          <div
+            data-tilt
+            data-tilt-scale="0.9"
+            class="bg-[url('assets/images/png/explore_card_one_bg.png')] tilt tilt-card max-w-[375px] mx-auto lg:max-w-screen-lg duration-300 rounded-[18px] md:rounded-[24px] bg-no-repeat bg-cover text-center"
+          >
+            <div
+              class="pt-[40px] xl:pt-[80px] pb-[24px] md:pb-[40px] text-center mx-auto w-[80px] md:w-[100px] xl:w-[141px]"
+            >
+              <img
+                src="./assets/images/svg/clock_icon.svg"
+                class="mx-auto"
+                alt="clock_icon"
+              />
+            </div>
+            <h3
+              class="ff_Manrope text-[#ffffff] text-[18px] md:text-[20px] lg:text-[24px] font-[500] lg:leading-[32px] mb-2"
+            >
+              iWatch Faces & Watch Wallpaper
+            </h3>
+            <p
+              class="ff_inter text-[#ffffff] text-[16px] font-normal lg:leading-[27px] opacity-70 mb-0"
+            >
+              Designed for iPad
+            </p>
+            <p
+              class="ff_inter text-[#ffffff] text-[16px] font-normal lg:leading-[32px] max-w-[342px] mx-auto opacity-70 px-3 lg-px-0 mt-[27px] pb-[40px]"
+            >
+              Unlock the full potential of your Apple Watch with our faces
+            </p>
+            <img
+              src="./assets/images/svg/A_logo.svg"
+              alt="A_logo"
+              class="mx-auto w-[60px] md:w-[86px] pb-[40px] lg:pb-[49px]"
+            />
+          </div>
+          <!-- Card Two  -->
+          <div
+            data-tilt
+            data-tilt-scale="0.9"
+            class="bg-[url('assets/images/png/explore_card_two_bg.png')] explore_card_hover tilt tilt-card max-w-[375px] mx-auto lg:max-w-screen-lg duration-300 rounded-[18px] md:rounded-[24px] bg-no-repeat bg-cover text-center mt-[24px] lg:mt-[40px]"
+          >
+            <div
+              class="pt-[40px] xl:pt-[80px] pb-[24px] md:pb-[40px] text-center mx-auto w-[80px] md:w-[100px] xl:w-[141px]"
+            >
+              <img
+                src="./assets/images/svg/printer_icon.svg"
+                class="mx-auto"
+                alt="clock_icon"
+              />
+            </div>
+            <h4
+              class="ff_Manrope text-[#ffffff] text-[18px] md:text-[20px] lg:text-[24px] font-[500] lg:leading-[32px] mb-2"
+            >
+              Mobile Print - Wifi & Remote
+            </h4>
+            <p
+              class="ff_inter text-[#ffffff] text-[16px] font-normal lg:leading-[27px] opacity-70 mb-0"
+            >
+              Designed for iPad
+            </p>
+            <p
+              class="ff_inter text-[#ffffff] text-[16px] font-normal lg:leading-[32px] max-w-[342px] mx-auto opacity-70 px-3 lg-px-0 mt-[27px] pb-[40px]"
+            >
+              rint any file from your mobile phone with ease. Fast and
+              convenient
+            </p>
+            <img
+              src="./assets/images/svg/A_logo.svg"
+              alt="A_logo"
+              class="mx-auto w-[60px] md:w-[86px] pb-[40px] lg:pb-[49px]"
+            />
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <!-- Card Three  -->
+          <div
+            data-tilt
+            data-tilt-scale="0.9"
+            class="bg-[url('assets/images/png/explore_card_three_bg.png')] explore_card_hover tilt tilt-card max-w-[375px] mx-auto lg:max-w-screen-lg duration-300 rounded-[18px] md:rounded-[24px] bg-no-repeat bg-cover text-center mt-[24px] md:mt-0"
+          >
+            <div
+              class="pt-[40px] xl:pt-[80px] pb-[24px] md:pb-[40px] text-center mx-auto w-[80px] md:w-[100px] xl:w-[141px]"
+            >
+              <img
+                src="./assets/images/svg/call_record_icon.svg"
+                class="mx-auto"
+                alt="clock_icon"
+              />
+            </div>
+            <h4
+              class="ff_Manrope text-[#ffffff] text-[18px] md:text-[20px] lg:text-[24px] font-[500] lg:leading-[32px] mb-2"
+            >
+              Record Phone Calls & Call Save
+            </h4>
+            <p
+              class="ff_inter text-[#ffffff] text-[16px] font-normal lg:leading-[27px] opacity-70 mb-0"
+            >
+              Designed for iPad
+            </p>
+            <p
+              class="ff_inter text-[#ffffff] text-[16px] font-normal lg:leading-[32px] max-w-[342px] mx-auto opacity-70 px-3 lg-px-0 mt-[27px] pb-[40px]"
+            >
+              Automatically record your phone calls with a single click
+            </p>
+            <img
+              src="./assets/images/svg/A_logo.svg"
+              alt="A_logo"
+              class="mx-auto w-[60px] md:w-[86px] pb-[40px] lg:pb-[49px]"
+            />
+          </div>
+          <!-- Card Four  -->
+          <div
+          data-tilt
+          data-tilt-scale="0.9"
+            class="bg-[url('assets/images/png/explore_card_four_bg.png')] explore_card_hover tilt tilt-card max-w-[375px] mx-auto lg:max-w-screen-lg duration-300 rounded-[18px] md:rounded-[24px] bg-no-repeat bg-cover text-center mt-[24px] lg:mt-[40px]"
+          >
+            <div
+              class="pt-[40px] xl:pt-[80px] pb-[24px] md:pb-[40px] text-center mx-auto w-[80px] md:w-[100px] xl:w-[141px]"
+            >
+              <img
+                src="./assets/images/svg/fuzzy_icon.svg"
+                class="mx-auto"
+                alt="clock_icon"
+              />
+            </div>
+            <h4
+              class="ff_Manrope text-[#ffffff] text-[18px] md:text-[20px] lg:text-[24px] font-[500] lg:leading-[32px] mb-2"
+            >
+              Fuzzy: Text Customizer & Color
+            </h4>
+            <p
+              class="ff_inter text-[#ffffff] text-[16px] font-normal lg:leading-[27px] opacity-70 mb-0"
+            >
+              Designed for iPad/iPhone
+            </p>
+            <p
+              class="ff_inter text-[#ffffff] text-[16px] font-normal lg:leading-[32px] max-w-[342px] mx-auto opacity-70 px-3 lg-px-0 mt-[27px] pb-[40px]"
+            >
+              Customize any text and read faster! Discover Fuzzy’s power!
+            </p>
+            <img
+              src="./assets/images/svg/A_logo.svg"
+              alt="A_logo"
+              class="mx-auto w-[60px] md:w-[86px] pb-[40px] lg:pb-[49px]"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center flex flex-col items-center transform hover:scale-101 transition-transform duration-300 ease-in-out mt-10 md:mt-[100px] lg:mt-[60px] xl:mt-[115px]"
+      >
+        <img
+          class="w-full max-w-[200px] lg:max-w-[241px]"
+          src="./assets/images/svg/linear-appstun.svg"
+          alt="linear-appstun "
+        />
+        <p
+          class="ff_inter text-xs text-white opacity-70 pt-[18px] font-normal"
+        >
+          see more in Appstun
+        </p>
+        <div
+        class="hidden md:inline-block transform hover:scale-105 transition-transform duration-300 ease-in-out  md:mt-[100px] lg:mt-[60px] xl:mt-[115px] pb-10">
+        <a
+          class="transform cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out text-white ff_Manrope font-bold text-base py-3 px-8 lg:py-4 lg:px-10 rounded-[38px] bg-[linear-gradient(102deg,#FF3939_-4.42%,#4844F2_103.64%)]">
+          Explore
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#0C0216] rounded-t-[20px] rounded-t-[40px] lg:rounded-t-[60px]">
+    <div class="container">
+      <div
+        class="pt-[70px] flex flex-col md:flex-row justify-between md:items-center"
+      >
+        <div class="md:w-6/12 lg:w-4/12">
+          <div class="lg:max-w-[360px]">
+            <img
+              class="w-full max-w-[200px] lg:max-w-[241px]"
+              src="./assets/images/svg/linear-appstun.svg"
+              alt="linear-appstun "
+            />
+            <p
+              class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 pt-[18px] font-normal pt-3 pt-4 lg:pt-6"
+            >
+              SellYourApp is an Appstun organization. Appstun is a global
+              mobile app company that buys, builds, and grows mobile apps.
+            </p>
+            <div class="flex items-center pt-4 lg:pt-6">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class=""
+                ><img src="./assets/images/svg/instagram.svg" alt="instagram"
+              /></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ml-5"
+                ><img src="./assets/images/svg/mail.svg" alt="mail"
+              /></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ml-5"
+                ><img src="./assets/images/svg/link.svg" alt="link"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-6/12 lg:w-4/12 pt-5 md:pt-0">
+          <div class="flex justify-between">
+            <ul>
+              <li class="">
+                <a
+                  href="#"
+                  class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+                  >Quick Links</a
+                >
+              </li>
+              <li class="pt-4">
+                <a
+                  href="#"
+                  class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+                  >About</a
+                >
+              </li>
+              <li class="pt-3">
+                <a
+                  href="#"
+                  class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+                  >App Sale process</a
+                >
+              </li>
+              <li class="pt-3">
+                <a
+                  href="#"
+                  class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+                  >Why Us?</a
+                >
+              </li>
+              <li class="pt-3">
+                <a
+                  href="#"
+                  class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+                  >Our App
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="">
+                <a
+                  href="#"
+                  class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+                  >Information</a
+                >
+              </li>
+              <li class="pt-4">
+                <a
+                  href="#"
+                  class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+                  >Contact</a
+                >
+              </li>
+              <li class="pt-3">
+                <a
+                  href="#"
+                  class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+                  >support@appstun.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <div class="border-linear-footer"></div>
+        <div class="py-3 md:py-4 lg:py-6">
+          <p
+            class="ff_inter text-xs md:text-sm lg:text-base text-white opacity-70 font-normal"
+          >
+            Copyright Appstun All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- https://github.com/gijsroge/tilt.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+</body>
+
 </html>
