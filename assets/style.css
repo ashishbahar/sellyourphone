@@ -7,3 +7,19 @@
 .ff_manrope {
     font-family: "manrope";
 }
+
+.about_card_one {
+    box-shadow: 0px 0px 40px 0px rgba(72, 68, 242, 0.08), 0px 0px 32px 0px rgba(72, 68, 242, 0.04) inset, 0px 0px 32px 0px rgba(255, 57, 57, 0.04) inset, -1px -1px 82px 2px rgba(255, 255, 255, 0.20);
+
+}
+
+.border-linear-footer {
+    height: 1px;
+    border-radius: 106px;
+    opacity: 0.6;
+    background: var(
+      --gradient,
+      linear-gradient(180deg, #ff3939 0%, #4844f2 100%)
+    );
+  }
+  
