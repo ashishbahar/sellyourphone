@@ -34,15 +34,22 @@
               dark: "#1c1c1c",
               gray: "#969696",
             },
+            boxShadow: {
+              tellusboxshadow: "4px 5px 65px 0px rgba(0, 0, 0, 0.06)",
+            },
           },
         },
       };
     </script>
   </head>
   <body>
-    <div>
+    <div class="relative overflow-hidden">
+      <div
+        class="w-[400px] absolute top-0 left-0 h-[650px] bg-[#180d3e] blur-[85px] rotate-[30deg]"
+      ></div>
+
       <!-- Hero Section -->
-      <div class="bg-black xl:min-h-screen flex flex-col">
+      <div class="bg-black rounded-b-[32px] xl:min-h-screen flex flex-col">
         <!-- navbar -->
         <header>
           <div class="container">
@@ -135,15 +142,24 @@
             </div>
           </div>
         </header>
-        <div class="xl:grow flex flex-col items-center justify-center">
-          <div class="container">
-            <div class="flex items-end lg:mb-[70px]">
+        <div
+          class="xl:grow overflow-hidden flex relative flex-col items-center justify-center"
+        >
+          <div
+            class="w-[400px] absolute top-[0] right-[10%] h-[550px] bg-[#2a0820] blur-[85px] rotate-[20deg]"
+          ></div>
+          <div class="container relative z-5">
+            <div
+              class="flex lg:flex-row flex-col justify-between mt-[40px] lg:mt-[60px] xl:mt-[120px]"
+            >
               <div class="lg:w-[50%] pe-3">
-                <h1 class="text-white ff_manrope text-xl font-bold">
+                <h1
+                  class="text-white ff_manrope xl:text-xl text-[35px] sm:text-[47px] font-bold"
+                >
                   Selling Mobile Apps Made Simple.
                 </h1>
                 <p
-                  class="text-white mt-3 opacity-[.7] ff_inter font-normal text-xs leading-[170%]"
+                  class="text-white mt-3 opacity-[.7] ff_inter font-normal text-[15px] sm:text-xs leading-[170%]"
                 >
                   Looking to sell your mobile app? We buy iOS apps in different
                   categories and revenue levels. We promise 14 days from contact
@@ -151,16 +167,31 @@
                   partners are indie developers, studios and companies.
                 </p>
                 <button
-                  class="lg:mt-[46px] mt-[30px] ff_manrope font-bold bg-gradient-to-r from-[#FF3939] to-[#4844F2] text-xs text-white hover:from-[#4844F2] hover:to-[#FF3939] border-0 outline-0 px-[40px] py-[16px] rounded-[38px]"
+                  class="xl:mt-[46px] mt-[30px] ff_manrope font-bold bg-gradient-to-r from-[#FF3939] to-[#4844F2] text-[15px] sm:text-xs text-white hover:from-[#4844F2] hover:to-[#FF3939] border-0 outline-0 px-[30px] sm:px-[40px] py-[16px] rounded-[38px]"
                 >
                   Sell Your App
                 </button>
               </div>
-              <div>
-                <img src="./assets/images/png/heroimg.png" alt="heroimg" />
+              <div class="xl:w-[41%] mt-[40px] lg:mt-[0] lg:w-[50%] relative">
+                <img
+                  class="w-full max-w-[453px] xl:max-w-[unset] relative z-[5]"
+                  src="./assets/images/png/heroimg.png"
+                  alt="heroimg"
+                />
+                <img
+                  class="absolute xl:max-w-[650px] max-w-[600px] bottom-[0] xl:right-[-100px]"
+                  src="./assets/images/png/Vector.png"
+                  alt="bg-img"
+                />
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- tell us -->
+      <div class="mt-[100px] lg:mt-[163px]">
+        <div class="container">
+          <div class="max-w-[992px] shadow-[tellusboxshadow]"></div>
         </div>
       </div>
     </div>
