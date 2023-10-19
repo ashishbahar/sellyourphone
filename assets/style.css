@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 .ff_inter {
-    font-family: "inter";
+    font-family: 'Inter', sans-serif;
 }
 
 .ff_manrope {
@@ -14,12 +14,13 @@
 }
 
 .border-linear-footer {
-    height: 1px;
-    border-radius: 106px;
-    opacity: 0.6;
-    background: var(
-      --gradient,
-      linear-gradient(180deg, #ff3939 0%, #4844f2 100%)
-    );
-  }
-  
+    background: var(--gradient,
+            linear-gradient(180deg, #ff3939 0%, #4844f2 100%));
+}
+
+.timeline::before {
+    background-image: linear-gradient(to top, #e92121 50%, transparent 0%);
+    background-position: 35px;
+    background-size: 3px 30px;
+    /* background-repeat: repeat-y; */
+}
