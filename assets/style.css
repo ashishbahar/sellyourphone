@@ -17,9 +17,36 @@
     height: 1px;
     border-radius: 106px;
     opacity: 0.6;
-    background: var(
-      --gradient,
-      linear-gradient(180deg, #ff3939 0%, #4844f2 100%)
-    );
-  }
-  
+    background: var(--gradient,
+            linear-gradient(180deg, #ff3939 0%, #4844f2 100%));
+}
+
+input {
+    font-family: "inter" !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 170% !important;
+    opacity: .9 !important;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.text-linear {
+    background: var(--prime, linear-gradient(102deg, #FF3939 -4.42%, #4844F2 103.64%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bglinear {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 4px 5px 65px 0px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(30px);
+}
+
+.form_bg {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.60) 45.71%, rgba(255, 255, 255, 0.00) 100%);
+}
