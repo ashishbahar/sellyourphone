@@ -14,23 +14,16 @@
 }
 
 .border-linear-footer {
-<<<<<<< HEAD
-=======
-    height: 1px;
-    border-radius: 106px;
-    opacity: 0.6;
->>>>>>> 66e7cb6b270255a885c3e8774a1ad4fea75e1d4d
     background: var(--gradient,
             linear-gradient(180deg, #ff3939 0%, #4844f2 100%));
 }
 
-<<<<<<< HEAD
 .timeline::before {
     background-image: linear-gradient(to top, #e92121 50%, transparent 0%);
     background-position: 35px;
     background-size: 3px 30px;
-    /* background-repeat: repeat-y; */
-=======
+}
+
 input {
     font-family: "inter" !important;
     font-size: 16px !important;
@@ -59,5 +52,4 @@ input {
 
 .form_bg {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.60) 45.71%, rgba(255, 255, 255, 0.00) 100%);
->>>>>>> 66e7cb6b270255a885c3e8774a1ad4fea75e1d4d
 }
